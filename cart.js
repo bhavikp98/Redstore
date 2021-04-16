@@ -151,12 +151,19 @@ function displayCart(){
 
 		productContainer.innerHTML += `
 		<div class="cartTotalConatiner">
-
 		<span class="cartTotaltitle">Total Price</span>
 		<span class="cartTotal">Rs${cartCost},00</span>
+		<span onClick='removeItems()' class="emptyCart">Clear Cart</span>
 		</div>
 		`
 	}
+}
+
+function removeItems(){
+	localStorage.removeItem("productInCart")
+	localStorage.removeItem('totalCost');
+	localStorage.removeItem('cartNumber');
+	window.location.reload(true);
 }
 
 onLoadCartNumber()

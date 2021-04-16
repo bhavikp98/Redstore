@@ -548,6 +548,20 @@ select:focus{
 	width: 10%;
 }
 
+.emptyCart{
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.emptycartalert{
+	margin-top: 50px;
+	font-size: 3rem; 
+}
+
+
 
 /*-------------------Account Style------------------------------*/
 
